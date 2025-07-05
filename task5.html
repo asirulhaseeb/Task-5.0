@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Hub  - Your Online Store for gadgets</title>
+    <link rel="stylesheet" href="task5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Electro Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Electro Hub</h2>
+            <p>Discover amazing products at unbeatable prices</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be loaded dynamically from JavaScript -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Electro Hub is your one-stop destination for quality products at affordable prices.
+                 We're committed to providing excellent customer service and fast delivery.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@electrohub.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+    </main>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be loaded dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button class="checkout-btn" id="checkout-Button">Checkout</button>
+            </div>
+            <div id="order-confirmation">Your order is confirmed!</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Electro Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="task5.js"></script>
+</body>
+</html>
